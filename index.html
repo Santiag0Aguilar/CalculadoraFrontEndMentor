@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/index.css" />
+  </head>
+  <body>
+    <main class="Calc content">
+      <!-- Inicio parte de arriba calculadora -->
+      <div class="Header-Calc">
+        <h3>calc</h3>
+        <div class="Header-Calc__Display">
+          <h5>Theme</h5>
+          <div class="Header-Calc__Display--Theme">
+            <div class="Theme__Number">
+              <label for="#">1</label>
+              <input type="radio" />
+            </div>
+            <div class="Theme__Number">
+              <label for="#">2</label>
+              <input type="radio" />
+            </div>
+            <div class="Theme__Number">
+              <label for="#">3</label>
+              <input type="radio" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin parte de arriba calculadora -->
+
+      <!-- Inicio celda de muestra numeros -->
+      <div class="Screen-Calc">
+        <p class="PantallaMostrar"></p>
+      </div>
+      <!-- Fin de celda muestra numeros -->
+
+      <!-- Inicio teclado Calc -->
+      <div class="keyboard-Calc">
+        <div class="keyboard-Calc__Grid">
+          <div>
+            <p class="keyboard-btn">7</p>
+            <p class="keyboard-btn">4</p>
+            <p class="keyboard-btn">1</p>
+            <p class="keyboard-btn">.</p>
+          </div>
+          <div>
+            <p class="keyboard-btn">8</p>
+            <p class="keyboard-btn">5</p>
+            <p class="keyboard-btn">2</p>
+            <p class="keyboard-btn">0</p>
+          </div>
+          <div>
+            <p class="keyboard-btn">9</p>
+            <p class="keyboard-btn">6</p>
+            <p class="keyboard-btn">3</p>
+            <p class="keyboard-btn--Action">/</p>
+          </div>
+          <div>
+            <p class="keyboard-Calc__Blue keyboard-btn--Action">DEL</p>
+            <p class="keyboard-btn--Action">+</p>
+            <p class="keyboard-btn--Action">-</p>
+            <p class="keyboard-btn--Action">x</p>
+          </div>
+        </div>
+
+        <div class="keyboard-Calc__flex">
+          <p
+            class="keyboard-Calc__Blue keyboard-Calc__Blue--70 keyboard-bt keyboard-btn--Action"
+          >
+            RESET
+          </p>
+          <p class="keyboard-Calc__Red keyboard-btn--Equal">=</p>
+        </div>
+      </div>
+
+      <!-- Fin teclado calc -->
+    </main>
+
+    <script src="build/scripts/app.js"></script>
+  </body>
+</html>

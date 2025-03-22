@@ -1,0 +1,29 @@
+@use "global/var" as v;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: v.$MainFont;
+  line-height: 1.5;
+
+  /* Estas dos lineas deben cambiar con evento de js */
+  background-color: v.$Dark1;
+  color: v.$White;
+}
+
+p {
+  font-size: 32px;
+}
+.content {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}

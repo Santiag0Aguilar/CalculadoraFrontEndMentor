@@ -1,0 +1,126 @@
+@use "global/var" as v;
+@use "sass:color";
+
+.Calc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (min-width: 1440px) {
+    width: 50%;
+  }
+}
+
+/* Header Position */
+.Header-Calc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Header-Calc__Display {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.Header-Calc__Display--Theme {
+  display: flex;
+  flex-direction: row;
+  .Theme__Number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Keyboard Position  */
+
+.keyboard-Calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  .keyboard-Calc__Grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    @media (min-width: 1440px) {
+      justify-items: left;
+      padding-left: 16px;
+    }
+
+    div {
+      p {
+        margin: 1rem;
+      }
+    }
+  }
+
+  .keyboard-Calc__flex {
+    display: flex;
+    gap: 2rem;
+  }
+  p {
+    color: v.$Dark1;
+    font-weight: bold;
+    padding: 10px;
+    background-color: v.$White;
+    text-align: center;
+    border-radius: 10px;
+
+    @media (min-width: 640px) {
+      padding: 10px 40px;
+    }
+  }
+  p {
+    &:hover {
+      background-color: color.scale(v.$White, $lightness: -10%);
+      cursor: pointer;
+    }
+  }
+  .keyboard-Calc__Blue {
+    background-color: v.$DarkBlue1;
+    color: v.$White;
+    display: block;
+  }
+  .keyboard-Calc__Blue--70 {
+    width: 70%;
+  }
+  .keyboard-Calc__Blue,
+  .keyboard-Calc__Blue--70 {
+    &:hover {
+      background-color: color.scale(v.$DarkBlue1, $lightness: -10%);
+    }
+  }
+  .keyboard-Calc__Red {
+    background-color: v.$Red;
+    color: v.$White;
+    display: block;
+    width: 70%;
+    &:hover {
+      background-color: color.scale(v.$Red, $lightness: -10%);
+    }
+  }
+}
+
+.Screen-Calc {
+  text-align: right;
+  margin-right: 1rem;
+  font-weight: bold;
+  p {
+    font-size: 40px;
+    padding-right: 53px;
+  }
+}
+
+/* Border-Radius */
+
+.keyboard-Calc,
+.Screen-Calc {
+  width: 100%;
+  background-color: v.$Dark2;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
