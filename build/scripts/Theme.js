@@ -22,5 +22,5 @@ function ThemeSelected() {
       }
     });
   });
-  console.log(BtnThemeSelected);
+
 }
