@@ -19,16 +19,33 @@
           <h5>Theme</h5>
           <div class="Header-Calc__Display--Theme">
             <div class="Theme__Number">
-              <label for="#">1</label>
-              <input type="radio" />
+              <label for="theme1">1</label>
+              <label for="theme2">2</label>
+              <label for="theme3">3</label>
             </div>
-            <div class="Theme__Number">
-              <label for="#">2</label>
-              <input type="radio" />
-            </div>
-            <div class="Theme__Number">
-              <label for="#">3</label>
-              <input type="radio" />
+            <div class="Theme__Option">
+              <input
+                class="Theme__Option--Selected"
+                type="radio"
+                id="theme1"
+                name="theme"
+                value="1"
+                checked
+              />
+              <input
+                class="Theme__Option--Selected"
+                type="radio"
+                id="theme2"
+                value="2"
+                name="theme"
+              />
+              <input
+                class="Theme__Option--Selected"
+                type="radio"
+                id="theme3"
+                value="3"
+                name="theme"
+              />
             </div>
           </div>
         </div>
@@ -45,28 +62,28 @@
       <div class="keyboard-Calc">
         <div class="keyboard-Calc__Grid">
           <div>
-            <p class="keyboard-btn">7</p>
-            <p class="keyboard-btn">4</p>
-            <p class="keyboard-btn">1</p>
-            <p class="keyboard-btn">.</p>
+            <p class="keyboard-btn keyboard-bg3">7</p>
+            <p class="keyboard-btn keyboard-bg3">4</p>
+            <p class="keyboard-btn keyboard-bg3">1</p>
+            <p class="keyboard-btn keyboard-bg3">.</p>
           </div>
           <div>
-            <p class="keyboard-btn">8</p>
-            <p class="keyboard-btn">5</p>
-            <p class="keyboard-btn">2</p>
-            <p class="keyboard-btn">0</p>
+            <p class="keyboard-btn keyboard-bg3">8</p>
+            <p class="keyboard-btn keyboard-bg3">5</p>
+            <p class="keyboard-btn keyboard-bg3">2</p>
+            <p class="keyboard-btn keyboard-bg3">0</p>
           </div>
           <div>
-            <p class="keyboard-btn">9</p>
-            <p class="keyboard-btn">6</p>
-            <p class="keyboard-btn">3</p>
-            <p class="keyboard-btn--Action">/</p>
+            <p class="keyboard-btn keyboard-bg3">9</p>
+            <p class="keyboard-btn keyboard-bg3">6</p>
+            <p class="keyboard-btn keyboard-bg3">3</p>
+            <p class="keyboard-btn--Action keyboard-bg3">/</p>
           </div>
           <div>
             <p class="keyboard-Calc__Blue keyboard-btn--Action">DEL</p>
-            <p class="keyboard-btn--Action">+</p>
-            <p class="keyboard-btn--Action">-</p>
-            <p class="keyboard-btn--Action">x</p>
+            <p class="keyboard-btn--Action keyboard-bg3">+</p>
+            <p class="keyboard-btn--Action keyboard-bg3">-</p>
+            <p class="keyboard-btn--Action keyboard-bg3">x</p>
           </div>
         </div>
 
@@ -85,4 +102,5 @@
   </body>
 
   <script src="build/scripts/app.js"></script>
+  <script src="build/scripts/Theme.js"></script>
 </html>
