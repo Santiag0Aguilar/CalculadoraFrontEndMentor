@@ -10,7 +10,6 @@ function ThemeSelected() {
 
   BtnThemeSelected.forEach((radio) => {
     radio.addEventListener("change", () => {
-      console.log(typeof radio.value);
       if (radio.value == "2") {
         body.classList.remove("Theme3");
         body.classList.add("Theme2");
